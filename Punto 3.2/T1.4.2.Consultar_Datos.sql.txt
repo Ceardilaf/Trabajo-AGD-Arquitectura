@@ -1,0 +1,90 @@
+show collections
+
+db.stats()
+
+db.PGD1.aggregate([ {$group: {"_id": "DescriptivePGD1", Count: {$sum: 1}, AverageDCPower: {$avg: "$DC_POWER"}, AverageACPower: {$avg: "$AC_POWER"}, DailyYieldAcum: {$sum: "$DAILY_YIELD"}}}])
+
+db.PGD2.aggregate([ {$group: {"_id": "DescriptivePGD2", Count: {$sum: 1}, AverageDCPower: {$avg: "$DC_POWER"}, AverageACPower: {$avg: "$AC_POWER"}, DailyYieldAcum: {$sum: "$DAILY_YIELD"}}}])
+
+db.PWD1.aggregate([ {$group: {"_id": "DescriptivePWD1", Count: {$sum: 1}, 
+                              AverageAT: {$avg: "$AMBIENT_TEMPERATURE"}, AverageMT: {$avg: "$MODULE_TEMPERATURE"}, AverageIrradiation: {$avg: "$IRRADIATION"},
+			      MaxAT: {$max: "$AMBIENT_TEMPERATURE"}, MaxMT: {$max: "$MODULE_TEMPERATURE"}, MaxIrradiation: {$max: "$IRRADIATION"}, 
+			      MinAT: {$min: "$AMBIENT_TEMPERATURE"}, MinMT: {$min: "$MODULE_TEMPERATURE"}, MinIrradiation: {$min: "$IRRADIATION"}}}])
+
+db.PWD2.aggregate([ {$group: {"_id": "DescriptivePWD2", Count: {$sum: 1}, 
+                              AverageAT: {$avg: "$AMBIENT_TEMPERATURE"}, AverageMT: {$avg: "$MODULE_TEMPERATURE"}, AverageIrradiation: {$avg: "$IRRADIATION"},
+			      MaxAT: {$max: "$AMBIENT_TEMPERATURE"}, MaxMT: {$max: "$MODULE_TEMPERATURE"}, MaxIrradiation: {$max: "$IRRADIATION"}, 
+			      MinAT: {$min: "$AMBIENT_TEMPERATURE"}, MinMT: {$min: "$MODULE_TEMPERATURE"}, MinIrradiation: {$min: "$IRRADIATION"}}}])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
